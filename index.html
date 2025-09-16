@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Digital - Dune Lounge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-black">
+    <div class="max-w-md mx-auto main-container shadow-2xl shadow-black/50 min-h-screen">
+        <header id="header" class="relative">
+            <div class="h-96">
+                <img src="img/ambiente.jpg" alt="Ambiente interno do lounge com iluminação baixa e sofisticada"
+                    class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
+            </div>
+            <div class="absolute bottom-0 left-0 w-full p-6 text-white">
+                <h1 class="text-5xl text-gold gold-glow">Dune Lounge</h1>
+                <div class="mt-4 space-y-2 animated-item" style="animation-delay: 0.2s;">
+
+                    <div
+                        class="flex items-center gap-3 text-sm font-medium text-gray-200 bg-black/40 backdrop-blur-sm p-2 rounded-lg border border-white/10 w-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-clock-fill text-gold flex-shrink-0" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                        </svg>
+                        <div class="flex items-center gap-2 overflow-x-auto">
+                            <span>Ter-Qui: 19h-01h</span>
+                            <span class="text-gold/50">|</span>
+                            <span>Sex-Sáb: 19h-04h</span>
+                            <span class="text-gold/50">|</span>
+                            <span>Dom: 19h-03h</span>
+                        </div>
+                    </div>
+
+                    <a href="https://maps.app.goo.gl/pXosyomCPzQnpYyd7" target="_blank"
+                        class="inline-flex items-center gap-2 transition-opacity hover:opacity-80 pt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-geo-alt-fill text-gold" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                        </svg>
+                        <span>Avenida Pedro Escobar, 428 - Jardim Eliana</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div id="nav-container" class="sticky top-0 z-10 nav-container shadow-md shadow-black/30">
+            <div class="p-4">
+                <div class="relative">
+                    <input type="text" id="search-input" placeholder="Buscar no cardápio..."
+                        class="search-input w-full bg-[#2a2a2a] border border-gray-600 rounded-full py-2 pl-10 pr-4 text-white focus:outline-none focus:border-gold transition-colors">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <nav id="nav" class="flex justify-around p-2 border-t border-gray-800 overflow-x-auto">
+                <a href="#combos"
+                    class="nav-link flex-shrink-0 text-gray-400 p-2 text-center text-sm font-medium">Combos</a>
+                <a href="#porcoes"
+                    class="nav-link flex-shrink-0 text-gray-400 p-2 text-center text-sm font-medium">Porções</a>
+                <a href="#drinks"
+                    class="nav-link flex-shrink-0 text-gray-400 p-2 text-center text-sm font-medium">Drinks</a>
+                <a href="#doses"
+                    class="nav-link flex-shrink-0 text-gray-400 p-2 text-center text-sm font-medium">Doses</a>
+                <a href="#cervejas"
+                    class="nav-link flex-shrink-0 text-gray-400 p-2 text-center text-sm font-medium">Cervejas</a>
+                <a href="#roshs"
+                    class="nav-link flex-shrink-0 text-gray-400 p-2 text-center text-sm font-medium">Sessão</a>
+                <a href="#softdrinks"
+                    class="nav-link flex-shrink-0 text-gray-400 p-2 text-center text-sm font-medium">Bebidas</a>
+            </nav>
+        </div>
+
+        <main id="menu-container" class="p-4 pb-24"></main>
+
+        <div id="no-results" class="hidden text-center py-10">
+            <p class="text-gray-400">Nenhum produto encontrado com esse nome.</p>
+        </div>
+
+        <footer class="fixed bottom-0 left-0 right-0 z-10 max-w-md mx-auto">
+            <div
+                class="bg-[#121212] border-t border-gold/20 p-3 flex justify-between items-center backdrop-filter backdrop-blur-md">
+                <div class="flex items-center gap-5">
+                    <a href="#" class="text-gray-400 hover:text-gold transition-colors transform hover:scale-110"
+                        aria-label="WhatsApp">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/dune_loungesp?igsh=ZDlzbnAwZGw1Z2Fq"
+                        class="text-gray-400 hover:text-gold transition-colors transform hover:scale-110"
+                        aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.231 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.884a1.15 1.15 0 1 0 0 2.299 1.15 1.15 0 0 0 0-2.3zM8 3.882a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                    </a>
+                </div>
+                <!-- <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+                    class="bg-gold/20 text-gold p-2 rounded-full hover:bg-gold/30 transition-colors transform hover:scale-110"
+                    aria-label="Voltar ao topo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+                            transform="translate(0 2)" />
+                    </svg>
+                </button> -->
+
+                <div class="flex items-center gap-2">
+                    <a href="https://www.agencianexon.com.br" target="_blank"
+                        class="opacity-60 hover:opacity-100 transition-opacity" title="Desenvolvido por Nexo N">
+                        <img src="img/nexon.png" alt="Logo Nexo N" class="h-5"> </a>
+                    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+                        class="bg-gold/20 text-gold p-2 rounded-full hover:bg-gold/30 transition-colors transform hover:scale-110"
+                        aria-label="Voltar ao topo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+                                transform="translate(0 2)" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
