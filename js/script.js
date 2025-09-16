@@ -26,6 +26,7 @@ const menuData = {
             { name: 'Batata Frita C/ Cheddar e Bacon', description: '500g', price: '45,00', image: 'img/batata.jpg' },
             { name: 'Calabresa', description: '500g', price: '40,00', image: 'img/calabresa.jpg' },
             { name: 'Frango a Passarinho', description: '500g', price: '35,00', image: 'img/frango.jpg' },
+            { name: 'Cebola Empanada', description: '500g', price: '30,00' }
         ]
     },
     drinks: {
@@ -38,17 +39,17 @@ const menuData = {
             // SAKERINHA REMOVIDA
             { name: 'Dune Kiss', description: 'Gin, licor 43, limão siciliano e mel infusionado', price: '35,00', featured: 'Sugestão da Casa' },
             { name: 'Sabi Night', description: 'Gin, xarope de rosas francesas, morango e limão siciliano.', price: '30,00' },
-            { name: 'Whiskey Sour', description: 'Whiskey bourbon, limão siciliano, xarope de açúcar e angostura.', price: '25,00',  },
-            { name: 'Clericot', description: 'Espumante, licor 43, morango, kiwi e água com gás', price: '35,00'},
+            { name: 'Whiskey Sour', description: 'Whiskey bourbon, limão siciliano, xarope de açúcar e angostura.', price: '25,00', },
+            { name: 'Clericot', description: 'Espumante, licor 43, morango, kiwi e água com gás', price: '35,00' },
         ]
     },
     clubedogin: {
         title: 'Clube do Gin',
         items: [
-            { name: 'Gin Clássico', description: '', price: '40,00'},
+            { name: 'Gin Clássico', description: '', price: '40,00' },
             { name: 'Gold Dune', description: 'Gin, licor 43, limão siciliano e tônica', price: '55,00', featured: 'Exclusivo' },
             { name: 'Gin Mulle', description: 'Gin, limão siciliano, schweppes citrus e espuma de gengibre.', price: '45,00' },
-            { name: 'Gin Rose', description: 'Gin, xarope de rosas francesas e tônica', price: '45,00', image: 'img/gin.jpg' ,featured: 'Sugestão da Casa' },
+            { name: 'Gin Rose', description: 'Gin, xarope de rosas francesas e tônica', price: '45,00', image: 'img/gin.jpg', featured: 'Sugestão da Casa' },
             { name: 'Gin Tropical', description: 'Gin, mix de frutas e red bull tropical', price: '45,00' },
         ]
     },
@@ -95,17 +96,18 @@ const menuData = {
             { name: 'Balde Corona Long neck (5 Unidades)', price: '65,00', image: 'img/corona.jpg' },
 
             { name: 'Balde Heineken 600ml (5 Unidades)', price: '80,00' },
+            { name: 'Balde Brahma 600ml (5 Unidades)', price: '65,00' },
             { name: 'Balde Amstel 600ml (5 Unidades)', price: '65,00', image: 'img/amstel.jpg' },
             { name: 'Balde Original 600ml (5 Unidades)', price: '65,00', image: 'img/original.jpg' },
 
-            { name: 'Amstel 600 ML', price: '14,00'},
+            { name: 'Amstel 600 ML', price: '14,00' },
             { name: 'Brahma 600 ML', price: '14,00' },
             { name: 'Original 600 ML', price: '14,00' },
             { name: 'Heineken 600 ML', price: '17,00' },
             { name: 'Budweiser Long Neck', price: '10,00' },
-            { name: 'Corona Long Neck', price: '14,00'},
-            { name: 'Heineken Long Neck Zero', price: '12,00'},
-            { name: 'Skol Beats', price: '10,00'},
+            { name: 'Corona Long Neck', price: '14,00' },
+            { name: 'Heineken Long Neck Zero', price: '12,00' },
+            { name: 'Skol Beats', price: '10,00' },
         ]
     },
     roshs: {
