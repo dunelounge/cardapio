@@ -2,8 +2,8 @@ const menuData = {
     combos: {
         title: 'Combos',
         items: [
-            { name: 'Combo Beefeater', description: '4 gelo + red bull sabores', price: '240,00', image: 'img/beefeter.jpg' },
-            { name: 'Combo Beefeater Pink', description: '4 gelo + red bull sabores', price: '220,00', image: 'img/beefeter sabor.jpg' },
+            { name: 'Combo Beefeater', description: '4 gelo + red bull sabores', price: '250,00', image: 'img/beefeter.jpg' },
+            { name: 'Combo Beefeater Pink', description: '4 gelo + red bull sabores', price: '280,00', image: 'img/beefeter sabor.jpg' },
             { name: 'Combo Tanqueray', description: '4 gelo + red bull sabores', price: '250,00', image: 'img/tanquery.jpg' },
             { name: 'Combo Absolut', description: '4 gelo + red bull sabores', price: '210,00', image: 'img/absolut.jpg' },
             { name: 'Combo Ciroc Blue', description: '4 gelo + red bull sabores', price: '330,00', image: 'img/ciroc.jpg' },
@@ -46,6 +46,7 @@ const menuData = {
     clubedogin: {
         title: 'Clube do Gin',
         items: [
+            { name: 'Gin Ballena', description: '', price: '45,00' },
             { name: 'Gin Clássico', description: '', price: '40,00' },
             { name: 'Gold Dune', description: 'Gin, licor 43, limão siciliano e tônica', price: '55,00', featured: 'Exclusivo' },
             { name: 'Gin Mulle', description: 'Gin, limão siciliano, schweppes citrus e espuma de gengibre.', price: '45,00' },
