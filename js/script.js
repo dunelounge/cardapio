@@ -26,7 +26,8 @@ const menuData = {
             { name: 'Batata Frita C/ Cheddar e Bacon', description: '500g', price: '45,00', image: 'img/batata.jpg' },
             { name: 'Calabresa', description: '500g', price: '40,00', image: 'img/calabresa.jpg' },
             { name: 'Frango a Passarinho', description: '500g', price: '35,00', image: 'img/frango.jpg' },
-            { name: 'Cebola Empanada', description: '500g', price: '30,00' }
+            { name: 'Cebola Empanada', description: '500g', price: '30,00' },
+            { name: 'Picanha na Chapa', description: '500g', price: '80,00', image: 'img/picanha.jpg' },
         ]
     },
     drinks: {
