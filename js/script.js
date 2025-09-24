@@ -26,33 +26,31 @@ const menuData = {
             { name: 'Batata Frita C/ Cheddar e Bacon', description: '500g', price: '45,00', image: 'img/batata.jpg' },
             { name: 'Calabresa', description: '500g', price: '40,00', image: 'img/calabresa.jpg' },
             { name: 'Frango a Passarinho', description: '500g', price: '35,00', image: 'img/frango.jpg' },
-            { name: 'Cebola Empanada', description: '500g', price: '30,00' },
+            { name: 'Cebola Empanada', description: '500g', price: '30,00', image: 'img/cebola.jpg' },
             { name: 'Picanha na Chapa', description: '500g', price: '80,00', image: 'img/picanha.jpg' },
         ]
     },
     drinks: {
         title: 'Drinks',
         items: [
-            // Apenas Caipirinha tem imagem. A Caipiroska virá como item de lista.
             { name: 'Caipirinha', description: 'Cachaça com Morango, Kiwi, Maracujá, Limão ou Frutas Vermelhas', price: '20,00', image: 'img/caipirinha_morango.jpg' },
             { name: 'Caipiroska', description: 'Vodka com Morango, Kiwi, Maracujá, Limão ou Frutas Vermelhas', price: '25,00', image: 'img/caipirinha_mara.jpg' },
             { name: 'Sakeirinha', description: 'Vodka com Morango, Kiwi, Maracujá, Limão ou Frutas Vermelhas', price: '25,00', image: 'img/caipirinha_limao.jpg' },
-            // SAKERINHA REMOVIDA
-            { name: 'Dune Kiss', description: 'Gin, licor 43, limão siciliano e mel infusionado', price: '35,00', featured: 'Sugestão da Casa' },
-            { name: 'Sabi Night', description: 'Gin, xarope de rosas francesas, morango e limão siciliano.', price: '30,00' },
-            { name: 'Whiskey Sour', description: 'Whiskey bourbon, limão siciliano, xarope de açúcar e angostura.', price: '25,00', },
-            { name: 'Clericot', description: 'Espumante, licor 43, morango, kiwi e água com gás', price: '35,00' },
+            { name: 'Dune Kiss', description: 'Gin, licor 43, limão siciliano e mel infusionado', price: '35,00', featured: 'Exclusividade da Casa', image: 'img/dunekiss.JPG' },
+            { name: 'Sabi Night', description: 'Gin, xarope de rosas francesas, morango e limão siciliano.', price: '30,00', image: 'img/sabinight.jpg', featured: 'Exclusividade da Casa'},
+            { name: 'Whiskey Sour', description: 'Whiskey bourbon, limão siciliano, xarope de açúcar e angostura.', price: '25,00', image: 'img/whiskey_sour.jpg' },
+            { name: 'Clericot', description: 'Espumante, licor 43, morango, kiwi e água com gás', price: '35,00', image: 'img/clericot.jpg' },
         ]
     },
     clubedogin: {
         title: 'Clube do Gin',
         items: [
-            { name: 'Gin Ballena', description: '', price: '45,00' },
+            { name: 'Gin Ballena', description: '', price: '45,00', image: 'img/gin ballena.jpg' },
             { name: 'Gin Clássico', description: '', price: '40,00' },
             { name: 'Gold Dune', description: 'Gin, licor 43, limão siciliano e tônica', price: '55,00', featured: 'Exclusivo' },
             { name: 'Gin Mulle', description: 'Gin, limão siciliano, schweppes citrus e espuma de gengibre.', price: '45,00' },
             { name: 'Gin Rose', description: 'Gin, xarope de rosas francesas e tônica', price: '45,00', image: 'img/gin.jpg', featured: 'Sugestão da Casa' },
-            { name: 'Gin Tropical', description: 'Gin, mix de frutas e red bull tropical', price: '45,00' },
+            { name: 'Gin Tropical', description: 'Gin, mix de frutas e red bull tropical', price: '45,00', image: 'img/gintropical.webp' },
         ]
     },
     doses: {
