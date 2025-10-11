@@ -27,7 +27,7 @@ const menuData = {
             { name: 'Calabresa', description: '500g', price: '40,00', image: 'img/calabresa.jpg' },
             { name: 'Frango a Passarinho', description: '500g', price: '35,00', image: 'img/frango.jpg' },
             { name: 'Cebola Empanada', description: '500g', price: '30,00', image: 'img/cebolav2.jpg' },
-            { name: 'Contra Filé na Chapa', description: '500g', price: '70,00' },
+            { name: 'Contra Filé na Chapa', description: '500g', price: '70,00', image: 'img/contrav2.jpg' },
             { name: 'Picanha na Chapa', description: '500g', price: '90,00', image: 'img/picanha.jpg' },
         ]
     },
