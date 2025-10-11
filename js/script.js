@@ -4,7 +4,7 @@ const menuData = {
         items: [
             { name: 'Combo Beefeater', description: '4 gelo + red bull sabores', price: '250,00', image: 'img/beefeter.jpg' },
             { name: 'Combo Beefeater Pink', description: '4 gelo + red bull sabores', price: '280,00', image: 'img/beefeter sabor.jpg' },
-            { name: 'Combo Tanqueray', description: '4 gelo + red bull sabores', price: '250,00', image: 'img/tanquery.jpg' },
+            { name: 'Combo Tanqueray', description: '4 gelo + red bull sabores', price: '280,00', image: 'img/tanquery.jpg' },
             { name: 'Combo Absolut', description: '4 gelo + red bull sabores', price: '210,00', image: 'img/absolut.jpg' },
             { name: 'Combo Ciroc Blue', description: '4 gelo + red bull sabores', price: '330,00', image: 'img/ciroc.jpg' },
             { name: 'Combo Ciroc Red Berry', description: '4 gelo + red bull sabores', price: '340,00', image: 'img/ciroc_sabor.jpg' },
@@ -12,7 +12,7 @@ const menuData = {
             { name: 'Combo Black Label', description: '4 gelo + red bull', price: '320,00', image: 'img/black.jpg' },
             { name: 'Combo Buchannas', description: '4 gelo + red bull', price: '340,00', image: 'img/buchanas.jpg' },
             { name: 'Combo Chivas', description: '4 gelo + red bull', price: '280,00', image: 'img/chivas.jpg' },
-            { name: 'Combo Gold Label', description: '4 gelo + red bull', price: '400,00', image: 'img/goldlabel.jpg' },
+            { name: 'Combo Gold Label', description: '4 gelo + red bull', price: '450,00', image: 'img/goldlabel.jpg' },
             { name: 'Combo Jack Daniels', description: '4 gelo + red bull', price: '290,00', image: 'img/jack.jpg' },
             { name: 'Combo Old Parr', description: '4 gelo + red bull', price: '290,00', image: 'img/oldpar.jpg' },
             { name: 'Combo Red Label', description: '4 gelo + red bull', price: '220,00', image: 'img/red label.jpg' },
@@ -27,7 +27,8 @@ const menuData = {
             { name: 'Calabresa', description: '500g', price: '40,00', image: 'img/calabresa.jpg' },
             { name: 'Frango a Passarinho', description: '500g', price: '35,00', image: 'img/frango.jpg' },
             { name: 'Cebola Empanada', description: '500g', price: '30,00', image: 'img/cebolav2.jpg' },
-            { name: 'Picanha na Chapa', description: '500g', price: '80,00', image: 'img/picanha.jpg' },
+            { name: 'Contra Filé na Chapa', description: '500g', price: '70,00' },
+            { name: 'Picanha na Chapa', description: '500g', price: '90,00', image: 'img/picanha.jpg' },
         ]
     },
     drinks: {
@@ -46,7 +47,7 @@ const menuData = {
         title: 'Clube do Gin',
         items: [
             { name: 'Gin Ballena', description: '', price: '45,00', image: 'img/balena.jpg' },
-            { name: 'Gin Clássico', description: '', price: '40,00' },
+            { name: 'Gin Clássico', description: '', price: '40,00', description: 'Gin, Tônica' },
             { name: 'Gold Dune', description: 'Gin, licor 43, limão siciliano e tônica', price: '55,00', featured: 'Exclusivo' },
             { name: 'Gin Mulle', description: 'Gin, limão siciliano, schweppes citrus e espuma de gengibre.', price: '45,00' },
             { name: 'Gin Rose', description: 'Gin, xarope de rosas francesas e tônica', price: '45,00', image: 'img/gin.jpg', featured: 'Sugestão da Casa' },
