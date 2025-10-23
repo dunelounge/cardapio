@@ -117,7 +117,7 @@ const menuData = {
         collapsible: true,
         items: [
             { name: 'Aluguel', price: '30,00' },
-            { name: 'Essências Ziggy / Onix', description: 'Banana e açaí, Cherry, Coru magic, Frutas verdes, Tutti frutti, Grapp, Hapocalyx mint, High fusion, High herry, Hortelã, Laranja e morango, Limão, Manga tropical, Maçã, Pera, Tropical, Watermelon bomb, Frutas amarelas, Laranja, High passion, Duas goibas', price: '25,00' },
+            { name: 'Essências Ziggy / Onix', description: 'Banana e açaí, Cherry, Coru magic, Frutas verdes, Tutti frutti, Grapp, Hapocalyx mint, High fusion, High herry, Hortelã, Laranja e morango, Limão, Manga tropical, Maçã, Pera, Tropical, Watermelon bomb, Frutas amarelas, Laranja, High passion, Duas goibas, Jabuticaba', price: '25,00' },
             { name: 'Trident', price: '4,00' },
         ]
     },
