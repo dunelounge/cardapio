@@ -139,6 +139,8 @@ const menuData = {
             { name: 'Refrigerantes Lata', description: 'Coca-Cola, Coca Zero, Fanta, Guaraná', price: '6,00' },
             { name: 'Schweppes Lata', price: '7,00' },
             { name: 'Red Bull', description: 'Tradicional / Sabores', price: '13,00' },
+            { name: 'Monster Tradicional', description: 'Tradicional', price: '13,00' },
+            { name: 'Monster Mango Loco', description: 'Sabor Mango Loco', price: '13,00' },
             { name: 'Suco Jarra', description: 'Limão, Maracujá, Morango', price: '15,00' },
         ]
     }
