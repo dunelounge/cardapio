@@ -12,7 +12,7 @@ const menuData = {
             { name: 'Combo Black Label', description: '4 gelo + red bull', price: '340,00', image: 'img/black.jpg' },
             { name: 'Combo Buchannas', description: '4 gelo + red bull', price: '360,00', image: 'img/buchanas.jpg' },
             { name: 'Combo Chivas', description: '4 gelo + red bull', price: '300,00', image: 'img/chivas.jpg' },
-            { name: 'Combo Gold Label', description: '4 gelo + red bull', price: '450,00', image: 'img/goldlabel.jpg' },
+            { name: 'Combo Gold Label', description: '4 gelo + red bull', price: '500,00', image: 'img/goldlabel.jpg' },
             { name: 'Combo Jack Daniels', description: '4 gelo + red bull', price: '300,00', image: 'img/jack.jpg' },
             { name: 'Combo Old Parr', description: '4 gelo + red bull', price: '300,00', image: 'img/oldpar.jpg' },
             { name: 'Combo Red Label', description: '4 gelo + red bull', price: '250,00', image: 'img/red label.jpg' },
