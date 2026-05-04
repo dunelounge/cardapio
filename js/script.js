@@ -16,6 +16,7 @@ const menuData = {
             { name: 'Combo Jack Daniels', description: '4 gelo + red bull', price: '300,00', image: 'img/jack.jpg' },
             { name: 'Combo Old Parr', description: '4 gelo + red bull', price: '300,00', image: 'img/oldpar.jpg' },
             { name: 'Combo Red Label', description: '4 gelo + red bull', price: '250,00', image: 'img/red label.jpg' },
+            { name: 'Combo Tanqueray Bossa Nova', description: '4 gelo + red bull sabores', price: '340,00' }, // NOVO ITEM
         ]
     },
     porcoes: {
@@ -79,6 +80,7 @@ const menuData = {
             { name: 'Dose Old Parr', description: '1 Red bull + 1 gelo sabores', price: '40,00' },
             { name: 'Dose Red Label', description: '1 Red bull + 1 gelo sabores', price: '35,00' },
             { name: 'Dose Tanqueray', description: '1 Red bull + 1 gelo sabores', price: '40,00' },
+            { name: 'Dose Tanqueray Bossa Nova', description: '', price: '50,00' }, // NOVO ITEM
             { name: 'Gelo Tropical', description: '', price: '6,00' },
             { name: 'Gelo Coco', description: '', price: '4,00' },
             { name: 'Gelo Maracujá', description: '', price: '4,00' },
@@ -143,9 +145,15 @@ const menuData = {
             { name: 'Monster Mango Loco', description: 'Sabor Mango Loco', price: '13,00' },
             { name: 'Suco Jarra', description: 'Limão, Maracujá, Morango', price: '15,00' },
         ]
+    },
+    extras: { // NOVA CATEGORIA
+        title: 'Diversos / Extras',
+        items: [
+            { name: 'Pow Pow (Confete de Festa)', description: '1 por R$30 ou 4 por R$100', price: '30,00' }, // NOVO ITEM
+            { name: 'Sinalizador', description: '', price: '20,00' }, // NOVO ITEM
+        ]
     }
 };
-
 
 document.addEventListener('DOMContentLoaded', function () {
     const menuContainer = document.getElementById('menu-container');
