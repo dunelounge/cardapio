@@ -22,6 +22,7 @@ const menuData = {
             { name: 'Combo Jack BlackBerry', description: '4 gelo + red bull', price: '370,00' },
             { name: 'Combo Old Parr', description: '4 gelo + red bull', price: '300,00', image: 'img/oldpar.jpg' },
             { name: 'Combo Red Label', description: '4 gelo + red bull', price: '250,00', image: 'img/red label.jpg' },
+            { name: 'Combo Royal Salute', description: 'Garrafa 1.100', price: '1.200,00' },
         ]
     },
     porcoes: {
@@ -32,6 +33,7 @@ const menuData = {
             { name: 'Batata Frita C/ Cheddar e Bacon', description: '500g', price: '45,00', image: 'img/batata.jpg', featured: 'Sugestão da Casa' },
             { name: 'Calabresa', description: '500g', price: '40,00', image: 'img/calabresa.jpg' },
             { name: 'Cebola Empanada', description: '500g', price: '30,00', image: 'img/cebolav2.jpg' },
+            { name: 'Porção de Coxinha', description: '', price: '35,00' },
         ]
     },
     drinks: {
